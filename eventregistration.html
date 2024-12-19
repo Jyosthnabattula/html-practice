@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration</title>
+</head>
+<body bgcolor="yellow">
+    <h1>Event Registration</h1>
+    <form>
+        <fieldset>
+            <legend>Student Details</legend>
+            <label form="name">Name:</label>
+            <input type="text"  name="name" placeholder="enter your name"><br><br>
+            <label form"name"><em>Roll number</em></label>
+            <input type="text" name="name" placeholder="enter your rollnumber"><br><br>
+            <label form"name"><em>Gender</em></label>
+            <input type="radio" name="gender">male
+            <input type="radio" name="gender">female<br><br>
+            <label form"name"><em>COURSE</em></label>
+            <select>
+                <option>CSE</option>
+                <option>CSM</option>
+                <option>CSD</option>
+                <option>IT</option>
+                <option>ECE</option>
+                <option>EEE</option>
+                <option>MECH</option>
+                <option>CIVIL</option>
+            </select><br><br>
+
+            <label form="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label form="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required><br><br>
+
+            <label form="category">Category:</label>
+            <select id="category" name="category" onchange="showTimings()" required>
+                <option value="">Select</option>
+                <option value="day_scholar">Day Scholar</option>
+                <option value="hostler">Hostler</option>
+            </select><br><br>
+            <legend>Day Scholar Timings</legend>
+            <label for="day_scholar_time">Preferred Time:</label>
+            <select id="day_scholar_time" name="day_scholar_time">
+                <option value="morning">Morning (9:00 AM - 12:00 PM)</option>
+                <option value="afternoon">Afternoon (1:00 PM - 4:00 PM)</option>
+            </select><br><br>
+            <legend>Hostler Timings</legend>
+            <label for="hostler_time">Preferred Time:</label>
+            <select id="hostler_time" name="hostler_time">
+                <option value="evening">Evening (5:00 PM - 7:00 PM)</option>
+                <option value="night">Night (8:00 PM - 10:00 PM)</option>
+            </select>
+        </fieldset><br><br>
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>
