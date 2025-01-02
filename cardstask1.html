@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>cards</title>
+    <style>
+         *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+         }
+         body{
+            background-color: blue;
+         }
+         .card-container{
+            display: flex;
+            justify-content: center;
+            flex-wrap: nowrap;
+
+         }
+         .card{
+            background: white;
+            width: 3000px;
+            margin: 10px;
+            border-radius: 15px;
+         }
+         .card-img{
+            height: 250px;
+            margin-bottom: 15px;
+            background-size: cover;
+            
+         }
+         .car-1{
+             background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxQIigRH8QkERhJyf1FpB3Djm7-tboP60WLA&s");
+         }
+         .car-2{
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUmD0IbMLd0NQPmtlG3sQuLJWvpaVDH3NPcA&s");
+         }
+         .car-3{
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAEGQs_Cj-tuj51qamCUR4l7pEeqlLOKcr7w&s");
+         }
+         .car-4{
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN3JWtj_rRRJSfMUSDsrqD6bGq7U6Tp_-BAw&s");
+         }
+         .card-content h2{
+            padding:10px ;
+         }
+         .card-content p{
+            padding: 10px;
+         }
+         .card-content a{
+            background: black;
+            color: white;
+            padding: 5px 10px;
+            display: block;
+            text-align: center;
+            margin: 20px 50px;
+
+         }
+         .card:hover{
+            background-color: blueviolet;
+            color:white;
+            cursor: pointer;
+            transform: scale(1.03);
+            transition: all 1s ease;
+            text-decoration: none;
+
+         }
+    </style>
+</head>
+<body>
+    <div class="card-container">
+        <div class="card">
+            <div class="card-img car-1"></div>
+            <div class="card-content">
+                <h2>card 1</h2>
+                <p>An airline is a company that provides air transport services for traveling passengers or freight. Airlines use aircraft to supply these services and may form partnerships or alliances with other airlines for codeshare agreements, in which they both offer and operate the same flight.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img car-2"></div>
+            <div class="card-content">
+                <h2>card 2</h2>
+                <p>An airline is a company that provides air transport services for traveling passengers or freight. Airlines use aircraft to supply these services and may form partnerships or alliances with other airlines for codeshare agreements, in which they both offer and operate the same flight.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img car-3"></div>
+            <div class="card-content">
+                <h2>card 2</h2>
+                <p>An airline is a company that provides air transport services for traveling passengers or freight. Airlines use aircraft to supply these services and may form partnerships or alliances with other airlines for codeshare agreements, in which they both offer and operate the same flight.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img car-4"></div>
+            <div class="card-content">
+                <h2>card 2</h2>
+                <p>An airline is a company that provides air transport services for traveling passengers or freight. Airlines use aircraft to supply these services and may form partnerships or alliances with other airlines for codeshare agreements, in which they both offer and operate the same flight.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
